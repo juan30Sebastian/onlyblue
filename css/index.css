@@ -1,0 +1,105 @@
+body {
+    background-color: #4685ec;
+}
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.header {
+    width: 100%;
+    height: 70px;
+    background-color: rgb(0, 0, 30);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.boxlogo {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.titulologo {
+    color: white;
+    letter-spacing: 5px;
+}
+.navigation-header {
+    width: 30%;
+}
+.navigation-header ul{
+    display: flex;
+}
+.navigation-header ul li{
+    list-style: none;
+    margin: 0% 1%;
+}
+.navigation-header ul li a {
+    text-decoration: none;
+    color: #4685ec  ;
+}
+.main { 
+    width: 100%;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+}
+.poster {
+    width: 100%;
+    height: 500px;
+    background-color: rgb(0, 0, 30));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    border-radius: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease-in 1s;
+    position: relative;
+    overflow: hidden
+    ;
+}
+.poster:hover .boxdescription {
+    margin-top: 15%;
+}
+.boxdescription {
+    width: 40%;
+    height: 60%;
+    background-image: linear-gradient(#4685ec, rgb(0, 0, 30));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5%;
+    margin-top: 100%;
+    transition:  ease-in 0.6s;
+    position: absolute;
+}    
+.titulo {
+    color: rgb(0, 0, 30);
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 5px;
+}
+.parrafo {
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.playNow {
+    width: 200px;
+    height: 50px;
+    background-color: salmon;
+    border: 0;
+    color: rgb(0, 0, 30);
+    font-size: 2rem;
+    transition: ease-in 0.6s;
+}
+.playNow:hover {
+    width: 180px;
+}

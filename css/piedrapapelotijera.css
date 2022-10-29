@@ -1,0 +1,473 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 30);
+    overflow: hidden;
+}
+.container {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+.boxprincipal {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition:  ease-in 1.5s;
+    overflow: hidden;
+    background-color: rgb(0, 0, 30);
+}
+.boxDetalles {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: ease-in 1s;
+}
+.boxTime {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.time {
+    width: 150px;
+    height: 150px;
+    background-color: #3a4153;
+    border-radius: 50%;
+    transition: ease-in 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#numeroTime {
+    color: white;
+    letter-spacing: 4px;
+    font-size: 50px;
+}
+.boxPuntuacion {
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+.boxPeople {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.puntuacion {
+    font-size: 4rem;
+    color: white;
+}
+.imagenPeople {
+    height: 70%;
+}
+.boxSubtitulo {
+    width: 100%;
+    height: 80px;
+}
+.boxSubtitulo .subtitulo {
+    color: black;
+    text-align: center;
+    letter-spacing: 5px;
+}
+.boxEleccion {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition:  ease-in 1s;
+    z-index: 2;
+}
+.boxEleccionObjeto {
+    width: 30%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:  5px solid #3a4153;
+    border-radius: 15%;
+    transition: ease-in 0.4s;
+}
+.boxEleccionObjeto:hover {
+    transform: translatey(-20px);
+}
+.imagenObjeto {
+    width: 80%;
+    height: 70%;
+}
+.boxAleatorio {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.imagenObjetoAleatorio {
+    width: 150px;
+    border-radius: 15%;
+}
+.boxObjetoAleatorio {
+    width: 300px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid #3a4153;
+    transition: ease-in 0.4s;
+}
+ .imagenAleatorio {
+    width: 60%;
+ }
+ .continuar {
+    width: 200px;
+    height: 80px;
+    background-color: rgb(0, 0, 30);
+    border-radius: 20%;
+    font-size: 1.2rem;
+    color: white;
+    letter-spacing: 4px;
+    transition: ease 1s;
+    transform: translatey(1000px);
+    display: none;
+}
+.continuar:hover {
+    width: 180px;
+    font-size: 1rem;
+}
+    
+.panel {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    background-color: rgb(0, 0, 30);
+    transition: ease-in 0.8s;
+    z-index: 5;
+}
+.btnPanel{
+    width: 300px;
+    height: 70px;
+    background-color: #3a4153;
+    color: white;
+    transition: ease-in-out 0.5s;
+    font-size: 1.1rem;
+    letter-spacing: 4px;
+    margin-top: 10px;
+    display: none;
+}
+.btnPanel:hover{
+    width: 270px;
+    border-radius: 15%;
+}
+#btnPanelJugar {
+    display: block;
+}
+#btnPanelOk {
+    display: none;
+}
+.boxRondas {
+width: 100%;height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.boxPanelRondas {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.btnRondas {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #3a4153;
+    color: white;
+    font-size: 4rem;
+    transition: ease-in-out 0.4s;
+}
+.btnRondas:hover {
+
+    width: 80px;
+    height: 80px;
+}
+.textRondas {
+    font-size: 4rem;
+    padding: 5%;
+    transition: ease-in 0.8s;
+    color: white;
+    border: 3px solid #3a4153;
+}
+.tituloRondas {
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 700px){
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(0, 0, 30);
+        overflow: hidden;
+    }
+    .container {
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        overflow: hidden;
+    }
+    .boxprincipal {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition:  ease-in 1.5s;
+        overflow: hidden;
+        background-color: rgb(0, 0, 30);
+    }
+    .boxDetalles {
+        width: 100%;
+        height: 200px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        transition: ease-in 1s;
+    }
+    .boxTime {
+        width: 100%;
+        height: 30%;
+        border-radius: 0%;
+    }
+    .time {
+        width: 20%;
+        height: 100%;
+        background-color: #3a4153;
+        transition: ease-in 0.4s;
+        border-radius: 10%;
+    }
+    #numeroTime {
+        color: white;
+        letter-spacing: 4px;
+        font-size: 50px;
+    }
+    .boxPuntuacion {
+        width: 100%;
+        height: 50%;
+        display: flex;
+    }
+    .boxPeople {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .puntuacion {
+        font-size: 3rem;
+        color: white;
+    }
+    .imagenPeople {
+        height: 70%;
+    }
+    .boxSubtitulo {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .boxSubtitulo .subtitulo {
+        color: white;
+        text-align: center;
+        letter-spacing: 5px;
+        font-size: 1.3rem;
+    }
+    .boxEleccion {
+        width: 100%;
+        height: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        transition:  ease-in 1s;
+        
+    }
+    .boxEleccionObjeto {
+        width: 30%;
+        height: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border:  5px solid #3a4153;
+        border-radius: 15%;
+        transition: ease-in 0.4s;
+    }
+    .boxEleccionObjeto:hover {
+        transform: translatey(-20px);
+    }
+    .imagenObjeto {
+        width: 80%;
+        height: 70%;
+    }
+    .boxAleatorio {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    .imagenObjetoAleatorio {
+        width: 150px;
+        border-radius: 15%;
+    }
+    .boxObjetoAleatorio {
+        width: 300px;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 5px solid #3a4153;
+        transition: ease-in 0.4s;
+    }
+     .imagenAleatorio {
+        width: 60%;
+     }
+     .continuar {
+        width: 200px;
+        height: 80px;
+        background-color: rgb(0, 0, 30);
+        border-radius: 20%;
+        font-size: 1.2rem;
+        color: white;
+        letter-spacing: 4px;
+        transition: ease 1s;
+        transform: translatey(1000px);
+        display: none;
+    }
+    .continuar:hover {
+        width: 180px;
+        font-size: 1rem;
+    }
+        
+    .panel {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        background-color: rgb(0, 0, 30);
+        transition: ease-in 0.8s;
+        z-index: 5;
+    }
+    .btnPanel{
+        width: 200px;
+        height: 50px;
+        background-color: #3a4153;
+        color: white;
+        transition: ease-in-out 0.5s;
+        font-size: 1.1rem;
+        letter-spacing: 4px;
+        margin-top: 10px;
+        display: none;
+    }
+    .btnPanel:hover{
+        width: 170px;
+        border-radius: 15%;
+    }
+    #btnPanelJugar {
+        display: block;
+    }
+    .boxRondas {
+    width: 100%;height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .boxPanelRondas {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    .btnRondas {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background-color: #3a4153;
+        color: white;
+        font-size: 3rem;
+        transition: ease-in-out 0.4s;
+    }
+    .btnRondas:hover {
+        width: 50px;
+        height: 50px;
+    }
+    .textRondas {
+        font-size: 3rem;
+        padding: 5%;
+        transition: ease-in 0.8s;
+        color: white;
+        border: 3px solid #3a4153;
+        text-align: center;
+    }
+    .tituloRondas {
+        color: white;
+        text-align: center;
+        font-size: 1.6rem;
+    }
+}
+

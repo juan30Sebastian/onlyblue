@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, paoel o tijera</title>
+    <link rel="stylesheet" href="../css/piedrapapelotijera.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="boxprincipal">
+        <div class="boxDetalles">
+            <div class="boxTime"><span class="time" id="time"><h2 id="numeroTime">10</h2></span></div>
+            <div class="boxPuntuacion">
+                <span class="boxPeople">
+                    <img src="../imagenes/logo/robot.png" alt="" class="imagenPeople">
+                    <h3 class="puntuacion" id="puntuacionRobot">0</h3>
+                </span>
+                <span class="boxPeople">
+                    
+                    <h3 class="puntuacion" id="puntuacionPeople">0</h3>
+                    <img src="../imagenes/logo/persona.png" alt="" class="imagenPeople">
+                </span>
+            </div>
+        </div>
+            <div class="boxSubtitulo"><h1 class="subtitulo" id="subtitulo">Elige una tarjeta</h1></div>
+            <div class="boxEleccion">
+                <span class="boxEleccionObjeto" id="tijera" data-aos="flip-left" data-aos-duration="100"><img src="../imagenes/logo/tijeras.png" alt="" class="imagenObjeto"></span>
+                <span class="boxEleccionObjeto" id="papel"><img src="../imagenes/logo/hoja-de-papel.png" alt="" class="imagenObjeto"></span>
+                <span class="boxEleccionObjeto" id="piedra"><img src="../imagenes/logo/piedra.png" alt="" class="imagenObjeto"></span>
+            </div>
+        </div>
+
+        <div class="boxAleatorio">
+            <img src="../imagenes/logo/robot.png" alt="" class="imagenObjetoAleatorio">
+            <span class="boxObjetoAleatorio"><img src="../imagenes/logo/tijeras.png" alt="" id="imagenAleatoriaRobot" class="imagenAleatorio"></span>
+            <span class="boxObjetoAleatorio" id="boxObjetoAleatorioPeople"><img src="../imagenes/logo/hoja-de-papel.png" alt="" id="imagenAleatoriaPersona" class="imagenAleatorio"></span>
+            <img src="../imagenes/logo/persona.png" alt="" class="imagenObjetoAleatorio">
+        
+            <button class="continuar">continuar</button>Ñ
+        </div>
+        <div class="panel">
+            
+            <button class="btnPanel" id="btnPanelMododejuego">Modo de juego</button>
+            
+            <span class="boxRondas">
+                <h1 class="tituloRondas">Número de rondas.</h1>
+                <span class="boxPanelRondas">
+                <button class="btnRondas" id="btnRondasMenos">-</button>
+                <h2 class="textRondas" id="textRondas">1</h2>
+                <button class="btnRondas" id="btnRondasMas">+</button>
+                </span>
+                <button class="btnPanel" id="btnPanelJugar">Jugar</button>
+            </span>
+        </div>    
+    </div>
+<script src="../js/piedrapapelotijera.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+      AOS.init();
+    </script>
+    </body>
+</html>
